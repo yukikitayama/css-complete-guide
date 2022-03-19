@@ -32,6 +32,17 @@
 - `Decendent` would be the most frequent use. It doesn't matter whether it's direct child or indirect (nested) child. It will apply the rule to all the children.
   - Use `div p {}` style in CSS.
 
+## Property Worth to Remember
+
+- `color`
+- `background-color`
+- `display`
+- `padding`
+- `border`
+- `margin`
+- `width`
+- `height`
+
 ## Default CSS
 
 - `body` has a margin. To suppress it, `body { margin: 0; }`
