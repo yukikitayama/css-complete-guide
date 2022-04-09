@@ -110,8 +110,15 @@ If you use no parent and only child with relative position, child moves to the n
 
 `z-index` doesn't solely decide the stacking. z-index order of parent affect its children.
 
+## Style Image
 
+If you enter `img` tag, default height and width of the image file is used, no matter what height and width of the surrounding elements.
 
+`height: 100%;` in `img` CSS also leads to the original height of the image file, not height defined by the container.
 
+The container needs to specify height and width and set `display: inline-block;`, and use `height: 100%;` in `img`.
 
+`img` CSS can use `width: 100%;` and `display: block;`.
+
+`filter: ;` is to apply basic effect to images, such as grayscale and blur.
 
