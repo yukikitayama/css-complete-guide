@@ -122,3 +122,20 @@ The container needs to specify height and width and set `display: inline-block;`
 
 `filter: ;` is to apply basic effect to images, such as grayscale and blur.
 
+## Size and unit
+
+`rem` and `em` about font size.
+
+`vh` and `vw`
+
+### Percentage %
+
+**containing block** is a parent element which has a certain width or height. Its children can use % of this containing block.
+
+1. Elements using `position: fixed;` refer to `viewport` to calculate `%`.
+
+2. Elements with `position: absolute` refer to `ancestor/content` plus padding to calculate `%`. And the referred elements have `position: absolute;`, `position: relative;`, `position: fixed;`, or `position: sticky;`.
+
+3. Elements with `position: static;` or `position: relative;` refer to `ancestor/content` without padding to calculate `%`. Ancestor is the closest ancestor with **block level element**.
+
+`height: 100%;` is tricky. Without `position: absolute;`, it won't work, even if `width: 100%;` works.
