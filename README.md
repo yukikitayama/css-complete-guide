@@ -82,3 +82,18 @@
 ## :not() selector
 
 It's interesting, but the CSS code will be messy, so better to avoid.
+
+## Positioning
+
+By default, position: uses static. But by changing it, such as absolute, relative, fixed, sticky, we can change the positions of elements in webpage.
+
+**Document flow**
+
+**Positioning context** is, such as the element itself, viewport, parent elements, what does my position changes refer to?
+
+`position: fixed;` will remove the element from document flow, so other elements will take over the original position. And change it from block element to inline element style. This refers `viewport`.
+
+**z-index** works only when the element is using `position` value except static default. For example `position: fixed;` and `z-index: -1;
+
+`position: absolute;` changed to closest ancestor which has position property. 
+`position: relative;` 
