@@ -97,3 +97,21 @@ By default, position: uses static. But by changing it, such as absolute, relativ
 
 `position: absolute;` changed to closest ancestor which has position property. 
 `position: relative;` 
+
+Parent is `position: relative;` and child is `position: absolute;`
+
+If you use no parent and only child with relative position, child moves to the new position relative from the original position.
+
+- [How to set an image's width and height without stretching it?](https://stackoverflow.com/questions/1733006/how-to-set-an-images-width-and-height-without-stretching-it)
+
+`position: sticky;` sticky continues until its parent ends. But sticky is not perfect in browser support.
+
+### Stacking Context
+
+`z-index` doesn't solely decide the stacking. z-index order of parent affect its children.
+
+
+
+
+
+
