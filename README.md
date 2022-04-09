@@ -74,3 +74,11 @@
   - `<div>`
 - To inline elements, margin-top and margin-bottom have no effect.
 - Width and height also won't have effect on inline elements.
+
+## !important
+
+**Overwrites** specifity and all other selectors. But don't use this most cases, because the CSS code will be messy.
+
+## :not() selector
+
+It's interesting, but the CSS code will be messy, so better to avoid.
