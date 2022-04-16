@@ -139,3 +139,7 @@ The container needs to specify height and width and set `display: inline-block;`
 3. Elements with `position: static;` or `position: relative;` refer to `ancestor/content` without padding to calculate `%`. Ancestor is the closest ancestor with **block level element**.
 
 `height: 100%;` is tricky. Without `position: absolute;`, it won't work, even if `width: 100%;` works.
+
+## !important
+
+Rarely use `!important`. It's a bad practice to often use, because it breaks the specificity. You could use to overwrite the effect of their party library.
