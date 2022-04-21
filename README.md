@@ -143,3 +143,21 @@ The container needs to specify height and width and set `display: inline-block;`
 ## !important
 
 Rarely use `!important`. It's a bad practice to often use, because it breaks the specificity. You could use to overwrite the effect of their party library.
+
+## em
+
+Font-size will depend on the font-size of browser. 
+
+But em multiplication will be accumulated by inheritance.
+
+## rem
+
+Just take the font size of the browser and multiply the rem number applied to the element. 
+
+**No accumulation in inheritance**.
+
+Maybe using rem is more likely.
+
+em and rem can be applied to font-size, margin, padding.
+
+Use em and rem to make sizes dynamic to browser font size changes. Maybe we don't wanna apply em and rem to border and box-shadow.
