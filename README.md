@@ -161,3 +161,22 @@ Maybe using rem is more likely.
 em and rem can be applied to font-size, margin, padding.
 
 Use em and rem to make sizes dynamic to browser font size changes. Maybe we don't wanna apply em and rem to border and box-shadow.
+
+## Unit Recommendation
+
+- Root element font-size
+  - `%` percentage of the browser setting.
+- font-size except root element
+  - `rem` (relative to root font-size)
+- Padding and margin
+  - `rem`
+- Border
+  - `px`
+- Width and height
+  - `%`, `vw`, `vh`
+- Top and bottom, left and right
+  - `%`
+
+## Center Elements
+
+`margin: auto`, but it only works for `block level` elements with `explicitly width` assigned
